@@ -1,72 +1,72 @@
-Wikipedia Summary GUI
+# Wikipedia Summary GUI
 
-Overview
+## Overview
 
 This is a simple Tkinter-based GUI application that fetches Wikipedia summaries based on user input. The program allows users to enter a topic, retrieve a short summary from Wikipedia, and even listen to the text using text-to-speech (TTS) functionality.
 
-Features
+## Features
 
-User Input: Enter a topic to search for on Wikipedia.
+- **User Input:** Enter a topic to search for on Wikipedia.
+- **Summary Fetching:** Retrieves a brief summary of the topic using the Wikipedia API.
+- **Error Handling:** Provides feedback if no results are found or if multiple results exist.
+- **Text-to-Speech:** Reads the Wikipedia summary aloud using `pyttsx3`.
+- **Graphical Interface:** Built using Tkinter with a visually appealing design.
 
-Summary Fetching: Retrieves a brief summary of the topic using the Wikipedia API.
-
-Error Handling: Provides feedback if no results are found or if multiple results exist.
-
-Text-to-Speech: Reads the Wikipedia summary aloud using pyttsx3.
-
-Graphical Interface: Built using Tkinter with a visually appealing design.
-
-Dependencies
+## Dependencies
 
 Ensure you have the following dependencies installed before running the program:
 
+```sh
 pip install wikipedia pyttsx3
+```
 
-Installation & Usage
+## Installation & Usage
 
-Clone the repository:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/wiki-summary-gui.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd wiki-summary-gui
+   ```
+3. Run the Python script:
+   ```sh
+   python main.py
+   ```
 
-git clone https://github.com/yourusername/wiki-summary-gui.git
+## Project Structure
 
-Navigate to the project directory:
-
-cd wiki-summary-gui
-
-Run the Python script:
-
-python main.py
-
-Project Structure
-
+```
 |-- wiki-summary-gui/
-    |-- assets/                 # UI assets (images, icons, etc.)
-    |-- main.py                 # Main script for the application
-    |-- README.md               # Documentation
+    |-- build/assets/gui.py                 # UI assets (images, icons, etc.)
+```
 
-How It Works
+## How It Works
 
-The user enters a topic in the text field.
+1. The user enters a topic in the text field.
+2. Clicking the "Search" button fetches a short summary from Wikipedia.
+3. If multiple results exist, a suggestion list is displayed.
+4. The "Read Aloud" button triggers text-to-speech for the summary.
 
-Clicking the "Search" button fetches a short summary from Wikipedia.
+## Error Handling
 
-If multiple results exist, a suggestion list is displayed.
+- **Page Not Found:** If no Wikipedia page exists, the user is informed.
+- **Disambiguation:** If multiple pages match the query, a list of suggestions is provided.
 
-The "Read Aloud" button triggers text-to-speech for the summary.
+## Future Enhancements
 
-Error Handling
+- Add more customization options for text-to-speech (voice selection, speed adjustment, etc.).
+- Implement a history feature to store past searches.
+- Improve UI design with additional themes and responsiveness.
 
-Page Not Found: If no Wikipedia page exists, the user is informed.
-
-Disambiguation: If multiple pages match the query, a list of suggestions is provided.
-
-Future Enhancements
-
-Add more customization options for text-to-speech (voice selection, speed adjustment, etc.).
-
-Implement a history feature to store past searches.
-
-Improve UI design with additional themes and responsiveness.
-
-License
+## License
 
 This project is licensed under the MIT License.
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests for improvements.
+
+my name is uki
+
